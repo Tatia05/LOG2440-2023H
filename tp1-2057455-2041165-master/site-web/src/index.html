@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>PolyPlay</title>
+  </head>
+  <body id="container">
+    <header>
+      <nav id="nav-bar" class="flex-column">
+        <ul class="flex-column">
+          <li>
+            <a href="./index.html">
+              <i class="fa fa-info-circle"></i>
+              <span> Ma Bibliothèque</span>
+            </a>
+            <a href="./create_playlist.html">
+              <i class="fa fa-info-circle"></i>
+              <span>Créer  playlist</span>
+            </a>
+            <a href="./about.html">
+              <i class="fa fa-info-circle"></i>
+              <span>À Propos</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-area" class="flex-column">
+      <div id="search-bar">
+        <form id="search-form" class="flex-row">
+          <input id="search-input" type="text"/>
+          <button class="fa fa-2x fa-search" type="submit"></button>
+        </form>
+      </div>
+     
+      <div id="playlist-list">
+        <h1>Mes Playlists</h1>
+        <section id="playlist-container" class="playlist-container" style = "grid-template-columns: repeat(2,800px)">
+          <a href="./playlist.html" class="playlist-item flex-column">
+            <div class="playlist-preview">
+              <img src="./assets/img/default.png">
+              <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+            </div>
+          </a>
+          <a href="./playlist.html" class="playlist-item flex-column">
+            <div class="playlist-preview">
+              <img src="./assets/img/rock.jpg">
+              <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+            </div>
+          </a>
+          <a href="./playlist.html" class="playlist-item flex-column">
+            <div class="playlist-preview">
+              <img src="./assets/img/disc_weekly.jpeg">
+              <i class="fa fa-2x fa-play-circle hidden playlist-play-icon"></i>
+            </div>
+          </a>
+        </section>
+      </div>
+      <div id="songs-list">
+        <h1>Mes Chansons</h1>
+        <section id="song-container"  class="song-container flex-column" style = "grid-template-columns: repeat(2,800px)">
+          <a href="./songlist.html" class="song-item flex-row">
+            <div>
+              <button class="fa-regular fa-2x fa-heart"></button>
+            </div>
+          </a>
+          <a href="./songlist.html" class="song-item flex-row">
+            <div>
+              <button class="fa-regular fa-2x fa-heart"></button>
+            </div>
+          </a>
+          <a href="./songlist.html" class="song-item flex-row">
+            <div>
+              <button class="fa fa-2x fa-heart"></button>
+            </div>
+          </a>
+          <a href="./songlist.html" class="song-item flex-row">
+            <div class="songlist-preview">
+              <button class="fa-regular fa-2x fa-heart"></button>
+            </div>
+          </a>
+          <a href="./songlist.html" class="song-item flex-row">
+            <div>
+              <button class="fa fa-2x fa-heart"></button>
+            </div>
+          </a>
+        </section>
+      </div>
+    </main>
+    <footer id="playing-bar">
+      <div id="creators">
+        <p> Tatia Tshiya Ndaye 2057455</p>
+        <p> Jimmy Gédeon koumako 2041165 </p>
+      </div>
+    </footer>
+  </body>
+</html>
